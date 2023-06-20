@@ -1,0 +1,857 @@
+<!-- <meta http-equiv="refresh" content="60; URL='https://apmldriverissue.netlify.app/'" />  -->
+
+<!-- ="width: 25px; height: 25px;" style="height: 50px;width: 110px; transform: scaleX(-1);" src="../../assets/logi_0_cover_70-removebg-preview.png" alt="Truck"> -->
+<div class="screen">
+
+  <!-- <div class="input_box">
+  <div style=" float:left;">
+    <img src="../../assets/logo1.png" alt="" width="90px">
+   
+   </div>
+
+   <div >
+    <button id="kt1" class="button-27"style="background-color: black; color:red" (click)="myFunc(placeId)" formtarget="_blank">MXL</button>&nbsp;&nbsp;&nbsp;
+    <button class="button-27"style="background-color: black; color:red" (click)="myFunc1(placeId)" formtarget="_blank">SXL</button>&nbsp;&nbsp;&nbsp;
+    <button class="button-27"style="background-color: black; color:red" (click)="myFunc2(placeId)" formtarget="_blank">TRAILER</button>&nbsp;&nbsp;&nbsp;
+    <button class="button-27"style="background-color: black; color:red" (click)="myFunc3(placeId)" formtarget="_blank">Air Suspension</button>&nbsp;&nbsp;&nbsp;
+    <button class="button-27"style="background-color: black; color:red" (click)="myFunc5(placeId)" formtarget="_blank">Special </button>&nbsp;&nbsp;&nbsp;
+    <button class="button-27"style="background-color: black; color:red" (click)="myFunc6(placeId)" formtarget="_blank">ERF</button>&nbsp;&nbsp;&nbsp;
+    <button class="button-27"style="background-color: black; color:red" (click)="myFunc7(placeId)" formtarget="_blank">Local</button>&nbsp;&nbsp;&nbsp;
+    <button class="button-clear" (click)="myFunc4()">Clear</button>
+</div> 
+<div>
+  <input class="search_box" style="background-color: black; border: none; color: white; width: 300px; height: 35px; text-align: center; border: 1px solid red; border-radius: 10px;" class="form-control mr-sm-2" type="text"  name="searchText" id="test" value="LINE_MXL" [(ngModel)]="searchText" disabled >
+  
+</div>
+
+    
+
+ 
+</div> -->
+  <div class="screen-table-1">
+    <div class="tablesss">
+      <!-- ISSUE -->
+      <!-- <div class="table2">
+
+
+   <div class="tts">
+    <div>
+      
+      <h1 style="font-size: 18px; "><span style="font-size: 18px; color: Red;">
+        <span  style="max-width: 100px; ">  Case Not Attended </span> 
+      </span>  <br> GM-Gaadi Malik 🟪 <input type="number" [value]="gd" style="width: 45px; background-color: black;"> <br>  CD-Call  Desk  &nbsp; &nbsp; &nbsp;   &nbsp;🟨  <input type="number" [value]="cd" style="width: 45px; background-color: black;"> </h1>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+<div>
+  <br>
+  <input class="caseno" style="font-size: 30px; width:60px; height: 50px; text-align: center; color: red;; background-color: black; " type="text" [value]="nibba" disabled>
+
+</div>
+
+ 
+ </div>
+
+
+
+<br>
+
+<div class="table1" >
+
+    
+
+
+ <table   id="myTableee2" class="table table-sortable sortable" >
+   
+   <thead>
+     <tr style="text-transform: uppercase;">
+       
+         <th>V No.</th>
+         <th></th>
+         <th >Issue</th>
+         <th>Gm</th>
+         <th>Stat.</th>
+        
+       
+         <th  >Time </th>
+     
+         
+     </tr>
+   </thead>
+   <ng-container *ngFor="let a of (lis | filter:searchText ) ">
+     
+       <tr *ngIf="a['issueNo']!=null  && a['assignee']['name']!='Punit' &&a['issueDescription']=='Case yet not Attended'" >
+     
+     <td style="font-size: 18px;">{{vec(a['customFields'])}}</td>
+     
+     <td > 
+      <ng-container *ngFor="let b of qwe">
+    <td  *ngIf="vac(a['customFields'])==b['vehicleRegistrationNumber'];" >
+      <span  style="font-size: 20px;" *ngIf="b['customFields']!=null && vac(a['customFields'])!=null ; else five ">{{lin(b['customFields'])}}</span>
+      <ng-template #five><span style="color:red">Please Enter the Details</span></ng-template>
+    </td>
+   
+</ng-container>
+</td>
+
+     <td style="max-width: 50px; text-transform: uppercase;" [ngClass]="{'text-Driver':a['issueType'] === 'Driver Issue',
+     'text-gaadi':a['issueType'] === 'Gaadi Malik Issue'
+    }" >{{adt(a['issueType'])}}</td>
+  
+  <td >
+    <ng-container *ngFor="let b of qwe">
+  <td *ngIf="vac(a['customFields'])==b['vehicleRegistrationNumber']" id="tsi">
+    <span *ngIf="b['customFields']!=null; else one "> {{gad(b['customFields'])}}</span>
+    <ng-template #one><span style="color:red">Please Enter the Details</span></ng-template>
+  </td>
+ </ng-container>
+ </td>  
+<td >{{kad(a['customFields'])}}</td>
+     <td style="font-size: 12px;" [class]="millisToMinutesAndSeconds(a['createdAt']).classs">{{millisToMinutesAndSeconds(a['createdAt']).xyz}}</td>
+     
+         </tr>
+         </ng-container>
+     
+     </table>
+         
+    </div>
+
+  </div>
+ &nbsp;  &nbsp; &nbsp;&nbsp; -->
+      <!-- END HERE -->
+      <!-- OFF DUTY -->
+      <div class="table1">
+
+        <div class="label">
+          <div style=" float:center;">
+            <img src="../../assets/logo1.png" alt="" width="100px">
+
+          </div>
+          <br>
+          <h1> MXL SCREEN </h1>
+          <input class="caseno"
+            style="font-size: 45px; width: 80px;  text-align: center; color: red; background-color: black; " type="text"
+            [value]="all" disabled>
+
+        </div>
+
+
+
+        <div class="tt">
+          <div>
+            <input class="caseno"
+              style="font-size: 40px; width: 100px;  text-align: center; color: red; background-color: #252525; "
+              type="text" [value]="((offduty1/all)*100).toFixed(0)+'%'" disabled>
+            <input class="caseno"
+              style="font-size: 45px; width: 80px;  text-align: center; color: red; background-color: black; "
+              type="text" [value]="offduty1" disabled>
+          </div>
+          <div>
+
+            <h1 style="font-size: 30px; ">
+              <span style="max-width: 100px; "> <span style="color: red; font-size: 30px;">OFF DUTY </span> </span>
+
+            </h1>
+
+          </div>
+        </div>
+        <br>
+
+        <table id="myTableee1" class="table table-sortable offduty">
+
+          <thead>
+            <tr>
+
+              <th>V No.</th>
+              <th></th>
+              <th>mal.</th>
+
+              <th id="mk1">Place</th>
+
+
+
+              <th>count Up </th>
+              <th>Reason</th>
+              <th>C.Down</th>
+              <th> Type</th>
+            </tr>
+          </thead>
+
+          <tbody id="myTable1">
+            <ng-container *ngFor="let a of (offduty | filter:searchText ) ">
+              <tr
+                *ngIf="a['currentTripPoint']!=null && a['status']=='OffDuty' && a['currentTripPoint']['actualArrival']!=null">
+                <td style="font-size: 18px;">{{vehno(a['vehicle']['vehicleRegistrationNumber'])}}</td>
+
+                <td>
+                  <ng-container *ngFor="let b of qwe">
+                <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber'];" id="tsi">
+                  <span style="font-size: 15px;"
+                    *ngIf="b['customFields']!=null && a['vehicle']['vehicleRegistrationNumber']!=null ; else five  ">{{lin(b['customFields'])}}</span>
+                  <ng-template #five><span style="color:red">Please Enter the Details</span></ng-template>
+                </td>
+
+            </ng-container>
+            </td>
+
+            <td>
+              <ng-container *ngFor="let b of qwe">
+            <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber']" id="tsi">
+              <span *ngIf="b['customFields']!=null; else one ">{{gad(b['customFields'])}}</span>
+              <ng-template #one><span style="color:red">Please Enter the Details</span></ng-template>
+            </td>
+            </ng-container>
+            </td>
+
+            <!-- <td>{{remark(a['customFields'])}}</td> -->
+            <td style="width: 70px;">{{hubsplit(a['currentHub'])}}</td>
+            <td [class]="millisToMinutesAndSeconds(a['currentTripPoint']['actualArrival'] ).classs">
+              {{GetFullName(a['currentTripPoint']['actualArrival'])}}</td>
+            <td><textarea style="background-color: rgb(252, 30, 1); color:rgb(255, 255, 255)" cols="20"
+                rows="1">{{a['emptyRunReason']}}</textarea></td>
+            <td [class]="millisToMinutesAndSeconds(a['currentTripPoint']['plannedDeparture'] ).classs">
+              {{GetFullName(a['currentTripPoint']['plannedDeparture'])}}</td>
+            <td style="color: yellow;" *ngIf="a['vehicle']['vehicleLoadType']!=null; else trt">
+              {{a['vehicle']['vehicleLoadType']['name']}}</td>
+            <ng-template #trt><span style="color:red">Please Enter the Details</span></ng-template>
+            </tr>
+            </ng-container>
+
+          </tbody>
+        </table>
+
+        <div>
+          <div class="tt">
+            <div>
+
+              <input class="caseno"
+                style="font-size: 40px; width: 100px;  text-align: center; color: red; background-color: #252525; "
+                type="text" [value]="((maintenance/all)*100).toFixed(0) +'%'" disabled>
+              <input class="caseno"
+                style="font-size: 45px; width: 80px;  text-align: center; color: red; background-color: black; "
+                type="text" [value]="maintenance" disabled>
+            </div>
+            <div>
+
+              <h1 style="font-size: 30px; ">
+                <span style="max-width: 100px; "> <span style="color: red; font-size: 30px;">MAINTENANCE </span> </span>
+
+              </h1>
+
+            </div>
+          </div>
+          <br>
+
+
+          <table id="myTableee1" class="table table-sortable maintenance">
+
+            <thead>
+              <tr>
+
+                <th>V No.</th>
+                <th></th>
+                <th>mal.</th>
+
+                <th id="mk2">Place</th>
+
+
+
+                <th>count Up </th>
+                <th>Reason</th>
+                <th>type</th>
+
+              </tr>
+            </thead>
+
+            <tbody id="myTable1">
+              <ng-container *ngFor="let a of (offduty | filter:searchText ) ">
+                <tr *ngIf="a['currentTripPoint']!=null && a['status']=='Maintenance'">
+                  <td style="font-size: 18px;">{{vehno(a['vehicle']['vehicleRegistrationNumber'])}}</td>
+
+                  <td>
+                    <ng-container *ngFor="let b of qwe">
+                  <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber'];" id="tsi">
+                    <span style="font-size: 15px;"
+                      *ngIf="b['customFields']!=null && a['vehicle']['vehicleRegistrationNumber']!=null ; else five  ">{{lin(b['customFields'])}}</span>
+                    <ng-template #five><span style="color:red">Please Enter the Details</span></ng-template>
+                  </td>
+
+              </ng-container>
+              </td>
+
+              <td>
+                <ng-container *ngFor="let b of qwe">
+              <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber']" id="tsi">
+                <span *ngIf="b['customFields']!=null; else one ">{{gad(b['customFields'])}}</span>
+                <ng-template #one><span style="color:red">Please Enter the Details</span></ng-template>
+              </td>
+              </ng-container>
+              </td>
+
+              <!-- <td>{{remark(a['customFields'])}}</td> -->
+              <td style="width: 70px;">{{hubsplit(a['currentHub'])}}</td>
+              <td [class]="millisToMinutesAndSeconds(a['currentTripPoint']['actualArrival'] ).classs">
+                {{GetFullName(a['currentTripPoint']['actualArrival'])}}</td>
+              <td><textarea style="background-color: rgb(252, 30, 1); color:rgb(255, 255, 255)" cols="10"
+                  rows="1">{{remark(a['customFields'])}}</textarea></td>
+              <td style="color: yellow;" *ngIf="a['vehicle']['vehicleLoadType']!=null; else trt">
+                {{a['vehicle']['vehicleLoadType']['name']}}</td>
+              <ng-template #trt><span style="color:red">Please Enter the Details</span></ng-template>
+              </ng-container>
+            </tbody>
+          </table>
+
+
+        </div>
+
+      </div>
+      <!-- END HERE -->
+      <!--  AVAILABLE-->
+      <div class="table3">
+
+
+        <div class="tt">
+          <div>
+
+
+            <input class="caseno"
+              style="font-size: 40px; width: 100px;  text-align: center; color: red; background-color: #252525; "
+              type="text" [value]="((available2/all)*100).toFixed(0) +'%'" disabled>
+
+
+            <input class="caseno"
+              style="font-size: 45px; width: 80px;  text-align: center; color: red; background-color: black; "
+              type="text" [value]="available2" disabled>
+          </div>
+          <div>
+
+            <h1 style="font-size: 30px; ">
+              <span style="max-width: 100px; "> <span style="color: rgb(123, 255, 0); font-size: 25px;">AVAILABLE ODD
+                </span> </span>
+              <!-- <br> Hub  <input type="number" [value]="available1" style="width: 65px; font-size: 30px; height: 30px; background-color: black;"> <br> ODD    -->
+              <!-- <input type="number" [value]="available2" style="width: 65px; font-size: 30px;height: 30px; background-color: black;"> -->
+            </h1>
+
+          </div>
+        </div>
+
+        <br>
+        <div class="avi-table">
+
+          <div>
+
+            <!-- <span> ODD hubsplitATION <input class="caseno" style="font-size: 45px; width: 80px;  text-align: center; color: red; background-color: black; " type="text" [value]="available2" disabled> </span> -->
+            <table class="avi-table2" id="myTableee1" class="table table-sortable avi-table2">
+
+              <thead>
+                <tr style="text-transform: uppercase;">
+
+                  <th>V No.</th>
+                  <th></th>
+                  <th>mal.</th>
+
+                  <th id="ck1">Place</th>
+
+
+
+                  <th>count Up </th>
+                  <th>Remark</th>
+                  <th>type</th>
+
+                </tr>
+              </thead>
+              <tbody id="myTable1">
+                <ng-container *ngFor="let a of (available | filter:searchText ) ">
+                  <tr
+                    *ngIf="a['currentTripPoint']!=null&& !(hub(a.currentHub).includes('APML') && !hub(a.currentHub).includes('Apml')) ">
+                    <td style="font-size: 18px;">{{vehno(a['vehicle']['vehicleRegistrationNumber'])}}</td>
+
+                    <td>
+                      <ng-container *ngFor="let b of qwe">
+                    <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber'];" id="tsi">
+                      <span style="font-size: 15px;"
+                        *ngIf="b['customFields']!=null && a['vehicle']['vehicleRegistrationNumber']!=null ; else five  ">{{lin(b['customFields'])}}</span>
+                      <ng-template #five><span style="color:red">Please Enter the Details</span></ng-template>
+                    </td>
+
+                </ng-container>
+                </td>
+
+                <td>
+                  <ng-container *ngFor="let b of qwe">
+                <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber']" id="tsi">
+                  <span *ngIf="b['customFields']!=null; else one ">{{gad(b['customFields'])}}</span>
+                  <ng-template #one><span style="color:red">Please Enter the Details</span></ng-template>
+                </td>
+                </ng-container>
+                </td>
+
+                <td> <span *ngIf="hub(a.currentHub)=='APML' || hub(a.currentHub)=='Apml';else seven">
+                  </span><ng-template #seven>{{a.currentHub}} </ng-template> <br>{{hub1(a.currentHub)}}
+                </td>
+
+                <!-- <td > <textarea cols="10" rows="1"  *ngIf="hub(a.currentHub)=='APML' || hub(a.currentHub)=='Apml';else seven"> {{a.currentHub}}</textarea>
+          <ng-template #seven><textarea cols="10" rows="1"> {{a.currentHub}}<br> <span style="color:rgb(0, 255, 0)">Odd hubsplitation </span> </textarea></ng-template> </td> -->
+                <td [class]="millisToMinutesAndSeconds(a['lastTripPointCompletionTime'] ||000000 ).classs">
+                  {{GetFullName(a['lastTripPointCompletionTime']|| 00000000)}}</td>
+                <ng-template #one><span style="color:red">Please Enter the Details</span></ng-template>
+                <td><textarea style="background-color: #252525; color:white" cols="10"
+                    rows="1">{{remark(a['customFields'])}}</textarea></td>
+                <!-- <td [class]="millisToMinutesAndSeconds(a['currentTripPoint']['plannedDeparture'] ).classs">{{GetFullName(a['currentTripPoint']['plannedDeparture'])}}</td> -->
+                <td style="color: yellow;" *ngIf="a['vehicle']['vehicleLoadType']!=null; else trt">
+                  {{a['vehicle']['vehicleLoadType']['name']}}</td>
+                <ng-template #trt><span style="color:red">Please Enter the Details</span></ng-template>
+                </tr>
+                </ng-container>
+              </tbody>
+            </table>
+          </div>
+
+          <br>
+          <div>
+            <div class="tt">
+              <div>
+                <input class="caseno"
+                  style="font-size: 40px; width: 100px;  text-align: center; color: red; background-color: #252525; "
+                  type="text" [value]="((available1/all)*100).toFixed(0) +'%'" disabled>
+
+                <input class="caseno"
+                  style="font-size: 45px; width: 80px;  text-align: center; color: red; background-color: black; "
+                  type="text" [value]="available1" disabled>
+              </div>
+              <div>
+
+                <h1 style="font-size: 30px; ">
+                  <span style="max-width: 100px; "> <span style="color: rgb(123, 255, 0); font-size: 25px;">AVAILABLE
+                      HUB
+                    </span> </span>
+                  <!-- <br> Hub  <input type="number" [value]="available1" style="width: 65px; font-size: 30px; height: 30px; background-color: black;"> <br> ODD    -->
+                  <!-- <input type="number" [value]="available2" style="width: 65px; font-size: 30px;height: 30px; background-color: black;"> -->
+                </h1>
+
+              </div>
+            </div>
+            <!-- <p> HUB hubsplitATION  <input class="caseno" style="font-size: 45px; width: 80px;  text-align: center; color: red; background-color: black; " type="text" [value]="available1" disabled> </p> -->
+            <table class="avi-table1" id="myTableee1" class="table table-sortable avi-table1 ">
+
+              <thead>
+                <tr style="text-transform: uppercase;">
+
+                  <th>V No.</th>
+                  <th></th>
+                  <th>mal.</th>
+
+                  <th id="ck2">Place</th>
+
+
+
+                  <th>count Up </th>
+                  <th>Remark</th>
+                  <th>type</th>
+
+                </tr>
+              </thead>
+              <tbody id="myTable1">
+                <ng-container *ngFor="let a of (available | filter:searchText ) ">
+                  <tr *ngIf="a['currentTripPoint']!=null && hub(a.currentHub)=='APML' || hub(a.currentHub)=='Apml'">
+                    <td style="font-size: 18px;">{{vehno(a['vehicle']['vehicleRegistrationNumber'])}}</td>
+
+                    <td>
+                      <ng-container *ngFor="let b of qwe">
+                    <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber'];" id="tsi">
+                      <span style="font-size: 15px;"
+                        *ngIf="b['customFields']!=null && a['vehicle']['vehicleRegistrationNumber']!=null ; else five  ">{{lin(b['customFields'])}}</span>
+                      <ng-template #five><span style="color:red">Please Enter the Details</span></ng-template>
+                    </td>
+
+                </ng-container>
+                </td>
+
+                <td>
+                  <ng-container *ngFor="let b of qwe">
+                <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber']" id="tsi">
+                  <span *ngIf="b['customFields']!=null; else one ">{{gad(b['customFields'])}}</span>
+                  <ng-template #one><span style="color:red">Please Enter the Details</span></ng-template>
+                </td>
+                </ng-container>
+                </td>
+
+                <td style="width: 70px;"> <span
+                    *ngIf="hub(a.currentHub)=='APML' || hub(a.currentHub)=='Apml';else seven">
+                    {{hubsplit(a.currentHub)}}</span><ng-template #seven><span> {{hubsplit(a.currentHub)}}<br> <span
+                        style="color:rgb(0, 255, 0)"> </span> </span></ng-template> </td>
+
+                <td [class]="millisToMinutesAndSeconds(a['lastTripPointCompletionTime'] ).classs">
+                  {{GetFullName(a['lastTripPointCompletionTime'])}}</td>
+                <td><textarea style="background-color: #252525; color:white" cols="10"
+                    rows="1">{{remark(a['customFields'])}}</textarea></td>
+                <td style="color: yellow;" *ngIf="a['vehicle']['vehicleLoadType']!=null; else trt">
+                  {{a['vehicle']['vehicleLoadType']['name']}}</td>
+                <ng-template #trt><span style="color:red">Please Enter the Details</span></ng-template>
+                </tr>
+                </ng-container>
+              </tbody>
+            </table>
+          </div>
+
+
+
+
+
+
+
+          &nbsp; &nbsp; &nbsp;&nbsp;
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <!-- END HERE -->
+      <!-- AT LOADING -->
+      <div class="table3">
+
+        <div class="tt">
+          <div>
+
+            <input class="caseno"
+              style="font-size: 40px; width: 100px;  text-align: center; color: red; background-color: #252525; "
+              type="text" [value]="((Empty_Run/all)*100).toFixed(0) +'%'" disabled>
+            <input class="caseno"
+              style="font-size: 45px; width: 80px;  text-align: center; color: red; background-color: black; "
+              type="text" [value]="Empty_Run" disabled>
+          </div>
+          <div>
+
+            <h1 style="font-size: 30px; "> <span style="color: rgb(255, 102, 0); font-size: 30px; ">Empty Run </span>
+            </h1>
+
+          </div>
+        </div>
+
+        <br>
+
+        <table class="Empty_Run" id="myTableee1" class="table table-sortable Empty_Run ">
+
+          <thead>
+            <tr style="text-transform: uppercase;">
+
+              <th>V No.</th>
+              <th></th>
+              <th>mal.</th>
+
+              <th id="mk6">To</th>
+              <th>remaing kms </th>
+              <th>Remark</th>
+              <th>type</th>
+
+            </tr>
+          </thead>
+          <tbody id="myTable1">
+            <ng-container *ngFor="let a of (offduty | filter:searchText ) ">
+              <tr *ngIf="a['currentTripPoint']!=null && a['status']=='Empty Run'">
+                <td style="font-size: 18px;">{{vehno(a['vehicle']['vehicleRegistrationNumber'])}}</td>
+
+                <td>
+                  <ng-container *ngFor="let b of qwe">
+                <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber'];" id="tsi">
+                  <span style="font-size: 20px;"
+                    *ngIf="b['customFields']!=null && a['vehicle']['vehicleRegistrationNumber']!=null ; else five ">{{lin(b['customFields'])}}</span>
+                  <ng-template #five><span style="color:red">Please Enter the Details</span></ng-template>
+                </td>
+
+            </ng-container>
+            </td>
+
+            <td>
+              <ng-container *ngFor="let b of qwe">
+            <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber']" id="tsi">
+              <span *ngIf="b['customFields']!=null; else one ">{{gad(b['customFields'])}}</span>
+              <ng-template #one><span style="color:red">Please Enter the Details</span></ng-template>
+            </td>
+            </ng-container>
+            </td>
+            <!-- <td>{{remark(a['customFields'])}}</td> -->
+            <td>{{hubsplit(a['destination']['place']['name'])}}</td>
+
+            <td [class]="roundofkms(a['currentTripPoint']['remainingDistance']).classs">
+              {{roundofkms(a['currentTripPoint']['remainingDistance']).abc+'kms'}}</td>
+            <td><textarea style="background-color: #252525; color:white" cols="10"
+                rows="1">{{remark(a['customFields'])}}</textarea></td>
+            <td style="color: yellow;" *ngIf="a['vehicle']['vehicleLoadType']!=null; else trt">
+              {{a['vehicle']['vehicleLoadType']['name']}}</td>
+            <ng-template #trt><span style="color:red">Please Enter the Details</span></ng-template>
+            </tr>
+            </ng-container>
+          </tbody>
+        </table>
+
+
+
+
+
+
+
+
+
+        <div class="tt">
+          <div>
+            <input class="caseno"
+              style="font-size: 40px; width: 100px;  text-align: center; color: red; background-color: #252525; "
+              type="text" [value]="((loading1/all)*100).toFixed(0) +'%'" disabled>
+
+
+            <input class="caseno"
+              style="font-size: 45px; width: 80px;  text-align: center; color: red; background-color: black; "
+              type="text" [value]="loading1" disabled>
+          </div>
+          <div>
+
+            <h1 style="font-size: 30px; "> <span style="color: rgb(251, 255, 0); font-size: 30px; ">LOADING </span>
+            </h1>
+
+          </div>
+        </div>
+
+        <br>
+
+        <table class="loading" id="myTableee1" class="table table-sortable loading ">
+
+          <thead>
+            <tr style="text-transform: uppercase;">
+
+              <th>V No.</th>
+              <th></th>
+              <th>mal.</th>
+
+              <th id="mk3">Chub</th>
+
+
+
+              <th>count Up </th>
+              <th>Loaded By </th>
+              <th>Remark</th>
+              <th>type</th>
+
+            </tr>
+          </thead>
+          <tbody id="myTable1">
+            <ng-container *ngFor="let a of (offduty | filter:searchText ) ">
+              <tr *ngIf="a['currentTripPoint']!=null && a['status']=='At pickup'">
+                <td style="font-size: 18px;">{{vehno(a['vehicle']['vehicleRegistrationNumber'])}}</td>
+
+                <td>
+                  <ng-container *ngFor="let b of qwe">
+                <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber'];" id="tsi">
+                  <span style="font-size: 20px;"
+                    *ngIf="b['customFields']!=null && a['vehicle']['vehicleRegistrationNumber']!=null ; else five ">{{lin(b['customFields'])}}</span>
+                  <ng-template #five><span style="color:red">Please Enter the Details</span></ng-template>
+                </td>
+
+            </ng-container>
+            </td>
+
+            <td>
+              <ng-container *ngFor="let b of qwe">
+            <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber']" id="tsi">
+              <span *ngIf="b['customFields']!=null; else one ">{{gad(b['customFields'])}}</span>
+              <ng-template #one><span style="color:red">Please Enter the Details</span></ng-template>
+            </td>
+            </ng-container>
+            </td>
+
+            <td>{{hubsplit(a['currentHub'])}}</td>
+
+            <td [class]="millisToMinutesAndSeconds(a['currentTripPoint']['actualArrival'] ||000000 ).classs">
+              {{GetFullName(a['currentTripPoint']['actualArrival'])}}</td>
+
+            <td><textarea style="background-color: #252525; color:white" cols="10"
+                rows="1">{{remark(a['customFields'])}}</textarea></td>
+            <td style="color: yellow;" *ngIf="a['vehicle']['vehicleLoadType']!=null; else trt">
+              {{a['vehicle']['vehicleLoadType']['name']}}</td>
+            <ng-template #trt><span style="color:red">Please Enter the Details</span></ng-template>
+            </tr>
+            </ng-container>
+          </tbody>
+        </table>
+
+
+
+      </div>
+      <!-- END HERE -->
+
+      <!-- AT UNLOADING -->
+      <div class="table2">
+
+
+        <div class="tt">
+          <div>
+            <input class="caseno"
+              style="font-size: 40px; width: 100px;  text-align: center; color: red; background-color: #252525; "
+              type="text" [value]="((unloading1/all)*100).toFixed(0) +'%'" disabled>
+
+            <input class="caseno"
+              style="font-size: 45px; width: 80px;  text-align: center; color: red; background-color: black;"
+              type="text" [value]="unloading1" disabled>
+          </div>
+          <div>
+
+            <h1 style="font-size: 30px; "> <span style="color: rgb(0, 174, 255); font-size: 30px; "> UNLOADING </span>
+            </h1>
+
+          </div>
+        </div>
+        <br>
+
+        <table class="unloading" id="myTableee1" class="table table-sortable unloading">
+
+          <thead>
+            <tr style="text-transform: uppercase;">
+
+              <th>V No.</th>
+              <th></th>
+              <th>mal.</th>
+              <!-- <th >Remark</th> -->
+              <th id="mk4">Chub</th>
+
+
+
+              <th>count Up </th>
+              <th>Loaded By </th>
+              <th>Remark</th>
+              <th>type</th>
+            </tr>
+          </thead>
+          <tbody id="myTable1">
+            <ng-container *ngFor="let a of (offduty | filter:searchText ) ">
+              <tr *ngIf="a['currentTripPoint']!=null && a['status']=='At delivery'">
+                <td style="font-size: 18px;">{{vehno(a['vehicle']['vehicleRegistrationNumber'])}}</td>
+
+                <td>
+                  <ng-container *ngFor="let b of qwe">
+                <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber'];" id="tsi">
+                  <span style="font-size: 20px;"
+                    *ngIf="b['customFields']!=null && a['vehicle']['vehicleRegistrationNumber']!=null ; else five ">{{lin(b['customFields'])}}</span>
+                  <ng-template #five><span style="color:red">Please Enter the Details</span></ng-template>
+                </td>
+
+            </ng-container>
+            </td>
+
+            <td>
+              <ng-container *ngFor="let b of qwe">
+            <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber']" id="tsi">
+              <span *ngIf="b['customFields']!=null; else one ">{{gad(b['customFields'])}}</span>
+              <ng-template #one><span style="color:red">Please Enter the Details</span></ng-template>
+            </td>
+            </ng-container>
+            </td>
+            <!-- <td>{{remark(a['customFields'])}}</td> -->
+            <td>{{hubsplit(a['currentHub'])}}</td>
+            <td [class]="millisToMinutesAndSeconds(a['currentTripPoint']['actualArrival'] ||000000 ).classs">
+              {{GetFullName(a['currentTripPoint']['actualArrival'])}}</td>
+
+            <td><textarea style="background-color: #252525; color:white" cols="10"
+                rows="1">{{remark(a['customFields'])}}</textarea></td>
+            <td style="color: yellow;" *ngIf="a['vehicle']['vehicleLoadType']!=null; else trt">
+              {{a['vehicle']['vehicleLoadType']['name']}}</td>
+            <ng-template #trt><span style="color:red">Please Enter the Details</span></ng-template>
+            </tr>
+            </ng-container>
+          </tbody>
+        </table>
+
+      </div>
+      <!-- END HERE -->
+      <!-- intransit -->
+      <div class="table2">
+
+
+        <div class="tt">
+          <div>
+
+            <input class="caseno"
+              style="font-size: 40px; width: 100px;  text-align: center; color: red; background-color: #252525; "
+              type="text" [value]="((intransit/all)*100).toFixed(0) +'%'" disabled>
+            <input class="caseno"
+              style="font-size: 45px; width: 80px;  text-align: center; color: red; background-color: black;"
+              type="text" [value]="intransit" disabled>
+          </div>
+          <div>
+
+            <h1 style="font-size: 30px; "> <span style="color: purple; font-size: 30px; "> INTRANSIT </span></h1>
+
+          </div>
+        </div>
+        <br>
+
+        <table class="intransit" id="myTableee1" class="table table-sortable intransit">
+
+          <thead>
+            <tr style="text-transform: uppercase;">
+
+              <th>V No.</th>
+              <th></th>
+              <th>mal.</th>
+
+              <th id="mk5">To</th>
+              <th>remaing kms </th>
+              <th>Remark</th>
+              <th>type</th>
+
+            </tr>
+          </thead>
+          <tbody id="myTable1">
+            <ng-container *ngFor="let a of (offduty | filter:searchText ) ">
+              <tr *ngIf="a['currentTripPoint']!=null && a['status']=='Enroute for delivery'">
+                <td style="font-size: 18px;">{{vehno(a['vehicle']['vehicleRegistrationNumber'])}}</td>
+
+                <td>
+                  <ng-container *ngFor="let b of qwe">
+                <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber'];" id="tsi">
+                  <span style="font-size: 20px;"
+                    *ngIf="b['customFields']!=null && a['vehicle']['vehicleRegistrationNumber']!=null ; else five ">{{lin(b['customFields'])}}</span>
+                  <ng-template #five><span style="color:red">Please Enter the Details</span></ng-template>
+                </td>
+
+            </ng-container>
+            </td>
+
+            <td>
+              <ng-container *ngFor="let b of qwe">
+            <td *ngIf="a['vehicle']['vehicleRegistrationNumber']==b['vehicleRegistrationNumber']" id="tsi">
+              <span *ngIf="b['customFields']!=null; else one ">{{gad(b['customFields'])}}</span>
+              <ng-template #one><span style="color:red">Please Enter the Details</span></ng-template>
+            </td>
+            </ng-container>
+            </td>
+            <!-- <td>{{remark(a['customFields'])}}</td> -->
+            <td>{{hubsplit(a['destination']['place']['name'])}}</td>
+
+            <td [class]="roundofkms(a['currentTripPoint']['remainingDistance']).classs">
+              {{roundofkms(a['currentTripPoint']['remainingDistance']).abc+'kms'}}</td>
+            <td><textarea style="background-color: #252525; color:white" cols="10"
+                rows="1">{{remark(a['customFields'])}}</textarea></td>
+            <td style="color: yellow;" *ngIf="a['vehicle']['vehicleLoadType']!=null; else trt">
+              {{a['vehicle']['vehicleLoadType']['name']}}</td>
+            <ng-template #trt><span style="color:red">Please Enter the Details</span></ng-template>
+            </tr>
+            </ng-container>
+          </tbody>
+        </table>
+
+      </div>
+      <!-- intransit end here  -->
+    </div>
+  </div>
+  <div class="screen-table-2">
+    2
+  </div>
+</div>

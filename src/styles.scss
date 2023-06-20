@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+    // background-image: linear-gradient(to right top, #a5aba8, #464747, #7f8485, #a5aba8, #a5aba8) ;
+    // background-repeat: no-repeat;
+// background-size: 100%;
+background-color: black;
+    color:white;
+    font-size: 18px;
+    min-width: 100vw;
+    min-height: 100vh;
+  text-transform: uppercase;
+    overflow: scroll;
+}
+*{
+    
+
+    font-size: 12px;
+    font-weight:bold;
+}
+::-webkit-scrollbar {
+    width: 1px;
+
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(45, 45, 45);
+    border-radius: 9999px;
+
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(65, 64, 64);
+
+}

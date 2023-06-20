@@ -1,0 +1,410 @@
+.table1 {
+  //     background-image: linear-gradient(to right top, #a5aba8, #464747, #7f8485, #a5aba8, #a5aba8) ;
+  //     background-repeat: no-repeat;
+  // background-size: 100%;
+  background-color: black;
+  max-height: 600px;
+  color: white;
+  font-size: 14px;
+  border-collapse: collapse;
+  max-width: 405px;
+}
+
+* {
+  color: white;
+}
+
+.input_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+input.search_box:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  border: 0px solid black;
+}
+
+.table-sortable th {
+  cursor: pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+.table-sortable .th-sort-asc {
+  background: green
+}
+
+.table-sortable .th-sort-desc {
+  background: rgba(161, 0, 0);
+}
+
+
+.table-sortable1 th {
+  cursor: pointer;
+}
+
+.table-sortable1 .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.table-sortable1 .th-sort-desc::after {
+  content: "\25be";
+}
+
+.table-sortable1 .th-sort-asc::after,
+.table-sortable1 .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+.table-sortable1 .th-sort-asc {
+  background: green
+}
+
+.table-sortable1 .th-sort-desc {
+  background: rgba(161, 0, 0);
+}
+
+.tablesss {
+  display: flex;
+  width: fit-content;
+  padding: 10px;
+}
+
+textarea {
+  background-color: black;
+  color: white;
+}
+
+.table2 {
+  margin-left: 50px;
+  min-width: 400px;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &:last-child {
+    margin-left: 50px;
+  }
+}
+.table1 {
+
+  min-width: 400px;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &:last-child {
+    margin-left: 50px;
+  }
+}
+
+.table3 {
+ 
+  min-width: 400px;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.avi-table {
+  display: flex;
+  flex-direction: column;
+}
+.label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  h1{
+    font-size: 50px;
+  }
+}
+table {
+  margin-top: 20px;
+  display: block;
+  min-height: 400px;
+  
+  width: 100%;
+  border-spacing: 0 2px;
+  overflow: hidden auto;
+  padding-right: 1px;
+  &.avi-table1 {
+    margin-top: 20px;
+  }
+  thead, tbody {
+    display: block;
+    width: 100%;
+    tr {
+      display: flex;
+      height: 30px;
+      // width: 100%;
+      th, td {
+        height: 100%;
+        display: flex;
+        flex: 2;
+        white-space: nowrap;
+        align-items: center;
+        box-sizing: border-box;
+        width: 0;
+        &:nth-child(2) {
+          flex: 2;
+        }
+        &:nth-child(4), &:nth-child(6) {
+          flex: 3;
+        }
+      }
+    }
+  }
+  thead {
+    position: sticky;
+    top: 0;
+    z-index: 1; // any positive value, layer order is global
+    background-color: #151924;
+    color: white;
+    border-bottom: 2px solid red;
+  }
+  tbody {
+    tr:nth-child(2n) {
+    background-color: #151924;
+  }
+  textarea {
+    width: 100%;
+  }
+}
+}
+
+
+
+
+
+
+.screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.upper,
+.lower {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.tt {
+  height: 105px;
+  display: flex;
+  margin-top: -45px;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: space-between;
+  > div {
+    max-height: 100%;
+    &:nth-child(2) {
+      flex: 1;
+    }
+  }
+}
+
+hr {
+  background-color: black;
+  height: 2px;
+}
+
+.lower_screen,
+.Maintenance {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  font-size: 20px;
+  max-width: 65vw;
+  color: white;
+  position: sticky;
+  top: 0px;
+  // height: 80px;
+  z-index: 1; // any positive value, layer order is global
+  background: rgb(0, 0, 0); // any bg-color to overlap
+}
+
+.newStyle {
+  background-color:red;
+    color: white;
+  // animation: myanimation1 7s infinite;
+ 
+}
+
+@keyframes myanimation1 {
+  0% {
+    background-color: rgb(255, 55, 55);
+    color: black;
+  }
+
+  25% {
+    background-color: transparent;
+    color: white;
+  }
+
+  50% {
+    background-color: rgb(249, 71, 7);
+    color: black;
+  }
+
+  75% {
+    background-color: transparent;
+    color: white;
+  }
+
+  100% {
+    background-color: rgb(249, 71, 7);
+    color: black;
+  }
+}
+
+
+
+
+
+.desc {
+  color: rgb(249, 71, 7);
+  color: black;
+  animation: myanimation 2s infinite;
+  border-radius: 5px
+}
+
+@keyframes myanimation {
+  0% {
+    background-color: White;
+    color: black;
+  }
+
+  25% {
+    background-color: rgb(255, 0, 0);
+    color: black;
+  }
+
+  50% {
+    background-color: White;
+    color: black;
+  }
+
+  75% {
+    background-color: red;
+    color: black;
+  }
+
+  100% {
+    background-color: White;
+    color: black;
+  }
+}
+
+
+
+.abc {
+  display: flex;
+  justify-content: flex-start;
+  bottom: 0;
+  flex-direction: row;
+  align-items: baseline;
+
+}
+
+.newStyle1 {
+  color: yellow;
+  color: black;
+  animation: myanimation2 3s infinite;
+
+}
+
+@keyframes myanimation2 {
+  0% {
+    background-color: yellow;
+    color: black;
+  }
+
+  25% {
+    background-color: transparent;
+    color: white;
+  }
+
+  50% {
+    background-color: yellow;
+    color: black;
+  }
+
+  75% {
+    background-color: transparent;
+    color: white;
+  }
+
+  100% {
+    background-color: yellow;
+    color: black;
+  }
+}
+.kmsless{
+  background-color: green;
+  color: black;
+}
+.kmsmore{
+  background-color: rgb(93, 178, 206);
+  color: black;
+}
+.kmsmore1{
+  background-color: rgb(194, 45, 45);
+  color: white;
+}
+.myStyle {
+
+  background-color: green;
+  color: black;
+  // animation: myanimation3 5s infinite;
+  border-radius: 5px
+}
+
+@keyframes myanimation3 {
+  0% {
+    background-color: green;
+    color: black;
+  }
+
+  25% {
+    background-color: transparent;
+    color: white;
+  }
+
+  50% {
+    background-color: green;
+    color: black;
+  }
+
+  75% {
+    background-color: transparent;
+    color: white;
+  }
+
+  100% {
+    background-color: green;
+    color: black;
+  }
+}
